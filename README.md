@@ -1,30 +1,48 @@
-# 9x9-Tic-Tac-Toe
-Also Know as Knots and Cross.
+# 9x9 Tic Tac Toe with Python and Kivy
 
-It has small Tic Tac Toe grid inside large Tic toe grid.
 
-Each small 3 × 3 tic-tac-toe board is referred to as a local board, and the larger 3 × 3 board is referred to as the global board.<br>
-Game Starts from the central box of the global grid. Player 1 can play in any of the 9 slots of the local board which will decide the next local Board.
+9x9 Tic Tac Toe is an engaging twist on the classic Tic Tac Toe game, played on a 9x9 grid comprising 9 smaller 3x3 Tic Tac Toe boards arranged in a 3x3 grid. The objective is to win at least 5 of the smaller Tic Tac Toe boards to claim victory.
 
-For Example Player 1 plays X on the top right box of local grid of global grid, then Player 2 has to play O in the next local board at the top right of the global board
-that will decide the next local board.<br>
-Local board is won by a player by the rules of normal tic tac toe, that local board is marked as victory on the global board for the player.
- If a player succesfully gets victory over 5 local Board then that player wins the match.
- 
- # How Program Works
- 
-Currently the game needs 2 player.
-Player 1 will be Red X and Player 2 will be Blue O.<br>
-Current Local Grid to be played will be highligted.
-Won local board will be Higlighted with the player Color.<br>
-Game Will end if any of 2 player wins 5 local board.
+## Installation
 
-# Future Updates
+To play 9x9 Tic Tac Toe, follow these steps:
 
-<ul>
-<li>Proper naming of functions.</li>
-<li>Adding AI to the game.</li>
-<li>A good looking User Interface.</li>
-<li>Option to save the game.</li>
-<li>Proper higlighting. </li>
-</ul>
+1. Clone the project from the GitHub repository:
+
+   ```
+   git clone https://github.com/Ashenoy64/9x9-Tic-Tac-Toe.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```
+   cd 9x9-Tic-Tac-Toe
+   ```
+
+3. Install Kivy, the required graphical library:
+
+   ```
+   pip install kivy
+   ```
+
+## How to Play
+
+After completing the installation, run the 9x9 Tic Tac Toe game using the following command:
+
+```
+python main.py
+```
+
+A window will appear with the 9x9 Tic Tac Toe board. To start the game, click the "Start" button. The game will highlight the smaller grid that is ready to be played.
+
+Players take turns by clicking on the cells of the highlighted 3x3 grid to place their respective symbols (e.g., "X" and "O"). The last move determines the next grid the opponent must play.
+
+If a player wins a smaller 3x3 grid (getting three symbols in a row horizontally, vertically, or diagonally), it will be highlighted with a different color, indicating that the player has claimed that grid.
+
+The game continues until one player wins at least 5 of the smaller 3x3 grids. The player who achieves this feat will be declared the winner of the 9x9 Tic Tac Toe game.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+Enjoy playing 9x9 Tic Tac Toe with your friends! If you have any questions or feedback, feel free to share it with the developer to improve the gaming experience. Happy gaming!
